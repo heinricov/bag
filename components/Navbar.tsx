@@ -37,7 +37,7 @@ export default function CustomNavbar() {
   return (
     <Navbar className="fixed w-full z-20 top-0 p-4 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className='flex justify-between'>
-        <Navbar.Brand as={Link} href="/" className='mr-[10rem]'>
+        <Navbar.Brand as={Link} href="/" className='lg:mr-[10rem]'>
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">B</span>
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ml-2">BagScript</span>
         </Navbar.Brand>
@@ -58,7 +58,7 @@ export default function CustomNavbar() {
         <DarkThemeToggle />
         <Navbar.Toggle />
       </div>
-      <Navbar.Collapse className='lg:hidden ml-4'>
+      <Navbar.Collapse className='lg:hidden'>
         <NavLink href="/">Home</NavLink>
         <NavLink href="/blogs">Blogs</NavLink>
         <NavLink href="/docs">Docs</NavLink>

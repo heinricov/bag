@@ -21,7 +21,7 @@ export default function DocsSidebar() {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } md:translate-x-0 w-64`}
       >
-        <Sidebar.Items>
+        <Sidebar.Items className='ml-16 pt-10'>
           <Sidebar.ItemGroup>
             <Sidebar.Item href="#" icon={HiDownload}>
               Install

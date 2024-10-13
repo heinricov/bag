@@ -2,6 +2,7 @@
 
 import { Button } from 'flowbite-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -13,9 +14,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="text-blue-600 text-6xl lg:text-[10rem] font-extrabold dark:text-blue-500">
+          {/* <span className="text-blue-600 text-6xl lg:text-[10rem] font-extrabold dark:text-blue-500">
             BagScript
-          </span>
+          </span> */}
+          <Image src="./logo/logo-bg-black.jpg" alt="logo" width={1000} height={1000} className="rounded-sm" />
         </motion.h1>
         <motion.p 
           className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 dark:text-gray-400"

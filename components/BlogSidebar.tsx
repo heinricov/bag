@@ -10,7 +10,8 @@ export default function BlogSidebar() {
   return (
     <>
       <Button
-        className="md:hidden fixed top-16 left-4 z-20"
+      style={{background:"transparent"}}
+        className="md:hidden fixed top-20 left-4 z-20"
         onClick={() => setIsOpen(!isOpen)}
       >
         <HiMenu className="h-6 w-6" />

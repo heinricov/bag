@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Navbar, DarkThemeToggle, TextInput } from 'flowbite-react';
+import Image from 'next/image';
 
 interface NavLinkProps {
   href: string;
@@ -38,7 +39,7 @@ export default function CustomNavbar() {
     <Navbar className="fixed w-full z-20 top-0 p-4 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className='flex justify-between'>
         <Navbar.Brand as={Link} href="/" className='lg:mr-[10rem]'>
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">B</span>
+          <Image src="./logo/logo-white.jpg" alt="logo" width={30} height={30} className="rounded-sm" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ml-2">BagScript</span>
         </Navbar.Brand>
         <div className='lg:flex hidden justyfy-between gap-5 items-center'>
@@ -56,7 +57,7 @@ export default function CustomNavbar() {
           className="mr-1 p-0 hidden lg:inline"
         />
         <DarkThemeToggle />
-        <Navbar.Toggle />
+        <Navbar.Toggle className='bg-transparent focus:bg-transparent' />
       </div>
       <Navbar.Collapse className='lg:hidden'>
         <NavLink href="/">Home</NavLink>

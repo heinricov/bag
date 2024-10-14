@@ -15,7 +15,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <Image
-            src="/logo/logo-bg-black.jpg"
+            src="./logo/logo-bg-black.png"
             alt="logo"
             width={1000}
             height={1000}
